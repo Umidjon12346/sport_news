@@ -9,6 +9,10 @@ const commentRouter = require("./comment.routes")
 const reportsRouter = require("./reports.routes")
 const viewsRouter = require("./views.routes")
 const likeRouter = require("./likes.routes")
+const newsTagRouter = require("./newstag.routes")
+const tagRouter = require("./tags.routes")
+const authorRouter = require("./author.routes")
+const notiRouter = require("./notifaction.routes")
 
 router.use("/lang",langRouter)
 router.use("/catego",categoRouter)
@@ -20,6 +24,10 @@ router.use("/comment",commentRouter)
 router.use("/report",reportsRouter)
 router.use("/view",viewsRouter)
 router.use("/like",likeRouter)
+router.use("/news-tag",newsTagRouter)
+router.use("/tag",tagRouter)
+router.use("/author",authorRouter)
+router.use("/notifaction",notiRouter)
 
 
 module.exports = router
