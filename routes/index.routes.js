@@ -13,6 +13,7 @@ const newsTagRouter = require("./newstag.routes")
 const tagRouter = require("./tags.routes")
 const authorRouter = require("./author.routes")
 const notiRouter = require("./notifaction.routes")
+const otpRouter = require("./otp.routes")
 
 router.use("/lang",langRouter)
 router.use("/catego",categoRouter)
@@ -28,6 +29,7 @@ router.use("/news-tag",newsTagRouter)
 router.use("/tag",tagRouter)
 router.use("/author",authorRouter)
 router.use("/notifaction",notiRouter)
+router.use("/otp",otpRouter)
 
 
 module.exports = router
